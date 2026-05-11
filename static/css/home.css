@@ -178,6 +178,7 @@
     line-height: 100%;
     cursor: pointer;
     transition: all 0.2s ease;
+    text-decoration: none;
 }
 
 .todayNote-title-link:hover{

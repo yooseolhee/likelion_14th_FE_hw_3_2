@@ -1,7 +1,122 @@
 {% extends 'base.html' %}
+{% load static %}
 
 {% block title %}Tech · {{ BRAND_NAME }}{% endblock %}
 
 {% block content %}
 {# TODO: W1 — 아기 사자 작성 영역 #}
+<link rel="stylesheet" href="{% static 'css/tech_list.css' %}">
+
+
+<div class="tech-notes">
+    <div class="tech-notes-inner">
+        <div class="tech-notes-header">
+            <div class="tech-notes-header-row">
+                <div>
+                    <div class="tech-notes-header-techNotes">TECH NOTES</div>
+                    <div class="tech-notes-header-title">만들면서 배운 것들.</div>
+                </div>
+                <div class="tech-notes-header-search">
+                    <span class="tech-notes-header-search-icon">⌕</span>
+                    <span class="tech-notes-header-search-str">search posts…</span>
+                    <span class="tech-notes-header-search-btn">⌘K</span>
+                </div>
+            </div>
+        </div>
+        <div class="tech-notes-header-tag">
+            <span class="tech-notes-header-tag-select">All</span>
+            <span class="tech-notes-header-tag-unselect">Frontend</span>
+            <span class="tech-notes-header-tag-unselect">TypeScript</span>
+            <span class="tech-notes-header-tag-unselect">AI</span>
+            <span class="tech-notes-header-tag-unselect">Performance</span>
+            <span class="tech-notes-header-tag-unselect">Series · DS</span>
+        </div>
+        <div class="tech-notes-content">
+            <div class="tech-notes-list">
+                <span class="tech-notes-list-date">2026.04.28</span>
+                <div class="tech-notes-list-content">
+                    <div class="tech-notes-list-title">손에 익는 디자인 시스템 만들기</div>
+                    <div class="tech-notes-list-subtitle">Designing a system that fits the hand</div>
+                    <div class="tech-notes-header-tag">
+                        <span class="tech-notes-header-tag-select">Frontend</span>
+                        <span class="tech-notes-header-tag-unselect">#design-system</span>
+                        <span class="tech-notes-header-tag-unselect">#tokens</span>
+                        <span class="tech-notes-header-tag-unselect">#css</span>
+                    </div>
+                </div>
+                <div class="tech-notes-list-time">8 min</div>
+            </div>
+            <div class="tech-notes-list">
+                <span class="tech-notes-list-date">2026.04.21</span>
+                <div class="tech-notes-list-content">
+                    <div class="tech-notes-list-title">tRPC와 함께한 1년: 좋았던 것, 불편했던 것</div>
+                    <div class="tech-notes-list-subtitle">A year with tRPC</div>
+                    <div class="tech-notes-header-tag">
+                        <span class="tech-notes-header-tag-select">TypeScript</span>
+                        <span class="tech-notes-header-tag-unselect">#trpc</span>
+                        <span class="tech-notes-header-tag-unselect">#types</span>
+                        <span class="tech-notes-header-tag-unselect">#dx</span>
+                    </div>
+                </div>
+                <div class="tech-notes-list-time">6 min</div>
+            </div>
+            <div class="tech-notes-list">
+                <span class="tech-notes-list-date">2026.04.14</span>
+                <div class="tech-notes-list-content">
+                    <div class="tech-notes-list-title">CSS Container Queries, 결국 쓰게 되더라</div>
+                    <div class="tech-notes-list-subtitle">I came around to container queries</div>
+                    <div class="tech-notes-header-tag">
+                        <span class="tech-notes-header-tag-select">Frontend</span>
+                        <span class="tech-notes-header-tag-unselect">#css</span>
+                        <span class="tech-notes-header-tag-unselect">#layout</span>
+                    </div>
+                </div>
+                <div class="tech-notes-list-time">5 min</div>
+            </div>
+            <div class="tech-notes-list">
+                <span class="tech-notes-list-date">2026.04.07</span>
+                <div class="tech-notes-list-content">
+                    <div class="tech-notes-list-title">Vibe coding 다음 단계 — 워크플로우 만들기</div>
+                    <div class="tech-notes-list-subtitle">Beyond vibe coding</div>
+                    <div class="tech-notes-header-tag">
+                        <span class="tech-notes-header-tag-select">AI</span>
+                        <span class="tech-notes-header-tag-unselect">#ai</span>
+                        <span class="tech-notes-header-tag-unselect">#workflow</span>
+                        <span class="tech-notes-header-tag-unselect">#agent</span>
+                    </div>
+                </div>
+                <div class="tech-notes-list-time">12 min</div>
+            </div>
+            <div class="tech-notes-list">
+                <span class="tech-notes-list-date">2026.03.30</span>
+                <div class="tech-notes-list-content">
+                    <div class="tech-notes-list-title">React 19 컴파일러로 useMemo를 지웠다</div>
+                    <div class="tech-notes-list-subtitle">Removing useMemo with React 19</div>
+                    <div class="tech-notes-header-tag">
+                        <span class="tech-notes-header-tag-select">Performance</span>
+                        <span class="tech-notes-header-tag-unselect">#react</span>
+                        <span class="tech-notes-header-tag-unselect">#perf</span>
+                    </div>
+                </div>
+                <div class="tech-notes-list-time">7 min</div>
+            </div>
+            <div class="tech-notes-list">
+                <span class="tech-notes-list-date">2026.03.22</span>
+                <div class="tech-notes-list-content">
+                    <div class="tech-notes-list-title">디자인 토큰을 코드로 옮기는 5가지 방법</div>
+                    <div class="tech-notes-list-subtitle">Five ways to ship design tokens</div>
+                    <div class="tech-notes-header-tag">
+                        <span class="tech-notes-header-tag-select">Series · DS</span>
+                        <span class="tech-notes-header-tag-unselect">#design-system</span>
+                        <span class="tech-notes-header-tag-unselect">#series</span>
+                        <span class="tech-notes-header-tag-unselect">#5/8</span>
+                    </div>
+                </div>
+                <div class="tech-notes-list-time">9 min</div>
+            </div>
+        </div>
+        <div>
+        </div>
+    </div>
+</div>
 {% endblock %}
