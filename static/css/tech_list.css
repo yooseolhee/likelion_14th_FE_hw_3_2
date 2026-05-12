@@ -76,12 +76,21 @@
 
 .tech-notes-header-search-str{
     width: 180px;
-    color: var(--beige-ink-4, #B59C82);
+    color: var(--beige-ink-1, #3A2419);
     font-family: Inter;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
     line-height: 160%;
+
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 0;
+}
+
+.tech-notes-header-search-str::placeholder{
+    color: var(--beige-ink-4, #B59C82);
 }
 
 .tech-notes-header-search-btn{
