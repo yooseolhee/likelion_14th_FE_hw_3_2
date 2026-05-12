@@ -1,0 +1,354 @@
+.post{
+    display: flex;
+    padding: 64px;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 48px;
+    align-self: stretch;
+}
+.post-index{
+    display: flex;
+    width: 220px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+}
+.post-index-title{
+    color: var(--beige-ink-3, #8A6A55);
+    font-family: "JetBrains Mono";
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    letter-spacing: 1.54px;
+}
+.post-index-list-select, .post-index-list-unselect{
+    display: flex;
+    padding: 2px 0 2px 10px;
+    align-items: flex-start;
+    border-left: 2px solid var(--beige-line-default, #D9C7A8);
+    cursor: pointer;
+}
+.post-index-list-select{
+    color: var(--beige-accent-hover, #C95A2C);
+    font-family: Inter;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+}
+.post-index-list-unselect{
+    color: var(--beige-ink-3, #8A6A55);
+    font-family: Inter;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+}
+.post-index-list-unselect:hover{
+    color: var(--beige-accent-hover, #C95A2C);
+}
+.post-inner{
+    display: flex;
+    width: 680px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+.post-header-frame{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.post-header-frame-fe{
+    display: flex;
+    padding: 4px 10px;
+    align-items: flex-start;
+    gap: 4px;
+    border-radius: 999px;
+    background: var(--beige-accent-soft, #F8DCCA);
+    color: var(--beige-accent-ink, #8C3A19);
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%;
+    letter-spacing: 0.24px;
+}
+.post-header-frame-date{
+    color: var(--beige-ink-3, #8A6A55);
+    font-family: "JetBrains Mono";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+}
+.post-header-title{
+    color: var(--beige-ink-1, #3A2419);
+    font-family: Inter;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; 
+    letter-spacing: -0.8px;
+}
+.post-header-subtitle{
+    color: var(--beige-ink-3, #8A6A55);
+    font-family: Inter;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 185%;
+}
+.post-content-description{
+    color: var(--beige-ink-1, #3A2419);
+    font-family: Inter;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 185%;
+}
+.post-content-description-color{
+    color: var(--beige-accent-ink, #8C3A19);
+}
+.post-content-title{
+    color: var(--beige-ink-1, #3A2419);
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 135%;
+}
+.post-content-str{
+    color: var(--beige-ink-1, #3A2419);
+    font-family: Inter;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 185%; 
+}
+.post-content-str-code{
+    color: var(--beige-ink-1, #3A2419);
+    font-family: "JetBrains Mono";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 185%;
+}
+.post-content-code{
+    display: flex;
+    padding: 16px 20px;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: stretch;
+    border-radius: 8px;
+    border: 1px solid var(--beige-line-default, #D9C7A8);
+    background: var(--beige-bg-sunken, #EFE4D2);
+}
+.post-content-code-str{
+    color: var(--beige-ink-1, #3A2419);
+    font-family: "JetBrains Mono";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 170%;
+}
+.post-comments-num{
+    color: var(--beige-ink-1, #3A2419);
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%;
+}
+.post-comments-post{
+    display: flex;
+    padding: 16px;
+    align-items: center;
+    gap: 12px;
+    align-self: stretch;
+    border-radius: 14px;
+    border: 1px solid var(--beige-line-default, #D9C7A8);
+    background: var(--beige-bg-paper, #FBF6EC);
+}
+.post-comments-img{
+    display: flex;
+    width: 32px;
+    height: 32px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 999px;
+    border: 1px solid var(--beige-line-strong, #B59C82);
+    background: var(--beige-accent-soft, #F8DCCA);
+    color: var(--beige-accent-ink, #8C3A19);
+    font-family: "JetBrains Mono";
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.post-comments-id{
+    width: 52px;
+    color: var(--beige-ink-1, #3A2419);
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 160%;
+}
+.post-comments-content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2px;
+    flex: 1 0 0;
+}
+.post-comments-btn{
+    display: flex;
+    padding: 10px 16px;
+    align-items: flex-start;
+    gap: 8px;
+    border-radius: 8px;
+    background: var(--beige-accent-default, #E8794A);
+    color: var(--beige-bg-paper, #FBF6EC);
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 160%;
+    cursor: pointer;
+}
+.post-comments-btn:hover{
+    background: var(--beige-accent-hover, #C95A2C);
+}
+.post-comments-btn:active{
+    transform: scale(0.98);
+}
+.post-comments{
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    align-self: stretch;
+}
+.post-comments-content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+    flex: 1 0 0;
+}
+.post-comments-login-str{
+    color: var(--beige-ink-1, #3A2419);
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 160%;
+}
+.post-comments-login-substr{
+    color: var(--beige-ink-3, #8A6A55);
+    font-family: Inter;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+}
+.post-comments-description{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2px;
+    flex: 1 0 0;
+}
+.post-comments-user{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.post-comments-date{
+    color: var(--beige-ink-3, #8A6A55);
+    font-family: "JetBrains Mono";
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+}
+.post-comments-str{
+    color: var(--beige-ink-1, #3A2419);
+    width: 383px;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+}
+.post-header-line{
+    width: 100%;
+    border: dashed 1px var(--beige-line-strong, #B59C82);
+}
+.post-information{
+    display: flex;
+    width: 220px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+}
+.post-information-title{
+    color: var(--beige-ink-3, #8A6A55);
+    font-family: "JetBrains Mono";
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    letter-spacing: 1.54px;
+}
+.post-information-match{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-self: stretch;
+}
+.post-information-l{
+    color: var(--beige-ink-3, #8A6A55);
+    font-family: "JetBrains Mono";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+}
+.post-information-r{
+    color: var(--beige-ink-1, #3A2419);
+    font-family: "JetBrains Mono";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+}
+.post-information-tag{
+    display: flex;
+    align-items: flex-start;
+    align-content: flex-start;
+    gap: 8px;
+    align-self: stretch;
+    flex-wrap: wrap;
+}
+.post-information-btn{
+    display: flex;
+    padding: 4px 10px;
+    align-items: flex-start;
+    gap: 4px;
+    border-radius: 999px;
+    border: 1px solid var(--beige-line-strong, #B59C82);
+    color: var(--beige-ink-2, #5B3A28);
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%;
+    letter-spacing: 0.24px;
+    cursor: pointer;
+}
+.post-information-btn:hover{
+    border: 1px solid var(--beige-line-strong, #B59C82);
+    background: var(--beige-bg-sunken, #EFE4D2);
+}
